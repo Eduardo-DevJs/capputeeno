@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Item from "../../components/Item";
 import Container from "../../components/container";
-import { Products } from "../../data/products";
+import { products } from "../../data/products";
 
 export default function Home() {
   return (
@@ -33,7 +33,7 @@ export default function Home() {
 
         <section>
           <ul className="mt-5 grid grid-cols-4 gap-3">
-            {Products.map((product) => (
+            {products.map((product) => (
               <>
                 <Link to={`/details/${product.id}`}>
                   <Item
