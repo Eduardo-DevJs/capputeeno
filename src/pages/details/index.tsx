@@ -9,9 +9,7 @@ import { FormatCurrency } from "../../utils/FormatCurrency";
 
 export default function DetailProduct() {
   const { id } = useParams();
-  const [productDetails, setProductDetails] = useState<ProductProps | null>(
-    null
-  );
+  const [productDetails, setProductDetails] = useState<ProductProps | null>(null);
 
   useEffect(() => {
     const product = products.find((product) => product.id === id);
