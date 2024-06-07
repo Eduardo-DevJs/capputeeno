@@ -14,7 +14,7 @@ export default function Cart() {
             <Link to={"/"}>Voltar</Link>
           </div>
 
-          <div className="grid grid-cols-3 mt-5 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 mt-5 gap-y-5 md:gap-5">
             <div className="col-span-2">
               <div className="space-y-2">
                 <h1 className="uppercase text-[#41414D] text-2xl font-semibold">

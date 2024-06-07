@@ -1,7 +1,12 @@
-import { ProductProps } from "../../types/product.type";
 import { FormatCurrency } from "../../utils/FormatCurrency";
 
-export default function Item({ image, price, title }: ProductProps) {
+interface ProductItemProps {
+  image: string;
+  price: number;
+  title: string;
+}
+
+export default function Item({ image, price, title }: ProductItemProps) {
   return (
     <li className="flex bg-white rounded-md flex-col gap-3">
       <img className="rounded-t-md" src={image} alt={title} />

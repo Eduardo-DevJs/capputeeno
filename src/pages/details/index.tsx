@@ -26,7 +26,7 @@ export default function DetailProduct() {
               <Link to={"/"}>Voltar</Link>
             </div>
 
-            <div className="grid grid-cols-2 gap-10 mt-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-5">
               <img
                 className="object-cover w-[640px] h-[580px] rounded-md"
                 src={productDetails.image}
@@ -54,7 +54,7 @@ export default function DetailProduct() {
                   </div>
                 </div>
 
-                <button className="flex items-center gap-5 justify-center p-3 rounded-md text-xl font-bold bg-[#115D8C] text-white">
+                <button className="flex items-center mt-4 md:mt-0 gap-5 justify-center p-3 rounded-md text-xl font-bold bg-[#115D8C] text-white">
                   <img src={cart} alt="icone carrinho de compras" />
                   Adicionar ao carrinho
                 </button>

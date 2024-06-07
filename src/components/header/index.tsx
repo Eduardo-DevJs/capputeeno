@@ -3,11 +3,11 @@ import cart from "../../assets/imgs/shopping-bag.png";
 import Container from "../container";
 export default function Header() {
   return (
-    <header className="bg-white">
+    <header className="bg-white px-4">
       <Container>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center flex-col md:flex-row gap-3 md:gap-0 justify-between">
           <Link to={"/"}>
-            <h1 className="text-[2.5rem] text-[#5D5D6D] font-bold">
+            <h1 className="text-[2.5rem]  text-[#5D5D6D] font-bold">
               capputeeno
             </h1>
           </Link>
